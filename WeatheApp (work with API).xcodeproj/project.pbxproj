@@ -13,6 +13,7 @@
 		EAF9D9DF267A4358005A31A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF9D9DD267A4358005A31A1 /* Main.storyboard */; };
 		EAF9D9E1267A4359005A31A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF9D9E0267A4359005A31A1 /* Assets.xcassets */; };
 		EAF9D9E4267A4359005A31A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF9D9E2267A4359005A31A1 /* LaunchScreen.storyboard */; };
+		EAF9D9F1267A58D2005A31A1 /* ViewController+alertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9D9F0267A58D2005A31A1 /* ViewController+alertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EAF9D9E0267A4359005A31A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAF9D9E3267A4359005A31A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAF9D9E5267A4359005A31A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF9D9F0267A58D2005A31A1 /* ViewController+alertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+alertController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		EAF9D9D6267A4358005A31A1 /* WeatheApp (work with API) */ = {
 			isa = PBXGroup;
 			children = (
-				EAF9D9D7267A4358005A31A1 /* AppDelegate.swift */,
-				EAF9D9D9267A4358005A31A1 /* SceneDelegate.swift */,
-				EAF9D9DB267A4358005A31A1 /* ViewController.swift */,
-				EAF9D9DD267A4358005A31A1 /* Main.storyboard */,
-				EAF9D9E0267A4359005A31A1 /* Assets.xcassets */,
-				EAF9D9E2267A4359005A31A1 /* LaunchScreen.storyboard */,
-				EAF9D9E5267A4359005A31A1 /* Info.plist */,
+				EAF9D9EB267A4373005A31A1 /* Extensions */,
+				EAF9D9EC267A437E005A31A1 /* Views */,
+				EAF9D9ED267A4391005A31A1 /* Models */,
+				EAF9D9EE267A439D005A31A1 /* View Controllers */,
+				EAF9D9EF267A43C2005A31A1 /* Supporting files */,
 			);
 			path = "WeatheApp (work with API)";
+			sourceTree = "<group>";
+		};
+		EAF9D9EB267A4373005A31A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9D9F0267A58D2005A31A1 /* ViewController+alertController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EAF9D9EC267A437E005A31A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9D9DD267A4358005A31A1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAF9D9ED267A4391005A31A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EAF9D9EE267A439D005A31A1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9D9DB267A4358005A31A1 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EAF9D9EF267A43C2005A31A1 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9D9E2267A4359005A31A1 /* LaunchScreen.storyboard */,
+				EAF9D9D7267A4358005A31A1 /* AppDelegate.swift */,
+				EAF9D9D9267A4358005A31A1 /* SceneDelegate.swift */,
+				EAF9D9E0267A4359005A31A1 /* Assets.xcassets */,
+				EAF9D9E5267A4359005A31A1 /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAF9D9DC267A4358005A31A1 /* ViewController.swift in Sources */,
+				EAF9D9F1267A58D2005A31A1 /* ViewController+alertController.swift in Sources */,
 				EAF9D9D8267A4358005A31A1 /* AppDelegate.swift in Sources */,
 				EAF9D9DA267A4358005A31A1 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLX89AH7T8;
-				INFOPLIST_FILE = "WeatheApp (work with API)/Info.plist";
+				INFOPLIST_FILE = "WeatheApp (work with API)/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TLX89AH7T8;
-				INFOPLIST_FILE = "WeatheApp (work with API)/Info.plist";
+				INFOPLIST_FILE = "WeatheApp (work with API)/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
