@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAC2F9D6267BA1B40061F1B8 /* NetworkWaetherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2F9D5267BA1B40061F1B8 /* NetworkWaetherManager.swift */; };
+		EAC2F9D8267BA2A60061F1B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2F9D7267BA2A60061F1B8 /* Constants.swift */; };
 		EAF9D9D8267A4358005A31A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9D9D7267A4358005A31A1 /* AppDelegate.swift */; };
 		EAF9D9DA267A4358005A31A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9D9D9267A4358005A31A1 /* SceneDelegate.swift */; };
 		EAF9D9DC267A4358005A31A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9D9DB267A4358005A31A1 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EAC2F9D5267BA1B40061F1B8 /* NetworkWaetherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWaetherManager.swift; sourceTree = "<group>"; };
+		EAC2F9D7267BA2A60061F1B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EAF9D9D4267A4358005A31A1 /* WeatheApp (work with API).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeatheApp (work with API).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF9D9D7267A4358005A31A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAF9D9D9267A4358005A31A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 		EAF9D9ED267A4391005A31A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EAC2F9D5267BA1B40061F1B8 /* NetworkWaetherManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 		EAF9D9EF267A43C2005A31A1 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				EAC2F9D7267BA2A60061F1B8 /* Constants.swift */,
 				EAF9D9E2267A4359005A31A1 /* LaunchScreen.storyboard */,
 				EAF9D9D7267A4358005A31A1 /* AppDelegate.swift */,
 				EAF9D9D9267A4358005A31A1 /* SceneDelegate.swift */,
@@ -181,9 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAF9D9DC267A4358005A31A1 /* ViewController.swift in Sources */,
+				EAC2F9D6267BA1B40061F1B8 /* NetworkWaetherManager.swift in Sources */,
 				EAF9D9F1267A58D2005A31A1 /* ViewController+alertController.swift in Sources */,
 				EAF9D9D8267A4358005A31A1 /* AppDelegate.swift in Sources */,
 				EAF9D9DA267A4358005A31A1 /* SceneDelegate.swift in Sources */,
+				EAC2F9D8267BA2A60061F1B8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -127,7 +127,7 @@
         <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
         <image name="sunrise" width="750" height="1334"/>
         <namedColor name="Color">
-            <color red="0.46891639852899725" green="0.33267393766471531" blue="0.06639928803697559" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.46666666666666667" green="0.32941176470588235" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
