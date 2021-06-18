@@ -8,14 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var weatherIconImageView: UIImageView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var feelsLikeTemperatureLabel: UILabel!
     
-    let networkWeatherManager = NetworkWaetherManager()
+    var networkWeatherManager = NetworkWaetherManager()
     
     @IBAction func searchPressed(_ sender: UIButton) {
         self.presentSearchAlertController(withTitle: "Enter city name", message: nil, style: .alert) { city in
@@ -26,10 +26,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        networkWeatherManager.onCompletion = { currentWeather in
+            print(currentWeather.cityName)
+        }
         networkWeatherManager.fetchCurrentWeather(forCity: "London")
         
     }
-
-
+    
+    
 }
 
