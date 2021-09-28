@@ -34,14 +34,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.requestLocation()
+        }
+    
         networkWeatherManager.onCompletion = { [weak self] currentWeather in
             guard let self = self else { return }
             self.updateInterfaceWith(weather: currentWeather)
         }
         
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.requestLocation()
-        }
     }
     
     
@@ -68,7 +69,7 @@ extension ViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error.localizedDescription)
+        print(error)
     }
 }
 
